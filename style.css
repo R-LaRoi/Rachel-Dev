@@ -3,60 +3,167 @@
   margin: 0;
   padding: 0;
 }
-
+ /* ---------------------------Header----------------------------- */
 .header-container{
 display: flex;
 justify-content: center;
-margin-top: 120px;
+margin-top: 90px;
 font-family: 'Major Mono Display', monospace;
 }
 
-
 .header-title{
 text-align: center;
-font-size: 205px;
+font-size: 180px;
 font-weight: 800;
 letter-spacing: -5px;
 color: #202020;
   line-height: 165px;
-  padding-bottom: 30px;
+  padding-bottom: 75px;
   
 
 }
 
-.name-first{
 
-  font-size: 170px;
-}
+/* ------------------------------------   NAV ------------------------------------- */
+
+.nav-stick{
+  position: sticky;
+  top: 0;
+  margin-left: 20px;
+
+
+} 
 
 ul{
   display: flex;
+    align-self: flex-start;
 font-size: 30px;
   list-style: none;
-padding-top: 50px;
 justify-content: center;
 color: rgb(24, 23, 23);
-
 font-weight: 200;
+padding: 0px 70px 0px 50px;
+font-family: 'Major Mono Display', monospace;
 }
+
+li:hover{
+color: whitesmoke;
+  cursor: pointer;
+}
+
 
 li{
   /* padding-top: 90px; */
-  padding: 90px 60px 30px 60px;
+  padding: 100px 80px 20px 80px;
   line-height:20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
-.menu-item-one{ 
-  /* background-color:#ff5100 ; */
+
+
+.menu-item-one  
+{
+ 
   background-color: #f01e91;
+padding-left: 90px;
+padding-right: 100px;
 
 }
 
-.menu-item-two{
-  background-color:#1df682;
-/* background-color: #ff7f1d */
+.menu-item-two {
+  background-color: #1df682;
+
 }
+
 .menu-item-three{
-/* background-color: #fae100 */
-  background-color: 
-  #5800FF;
+
+  background-color:
+    #5800FF;
+} 
+
+/* --------------------------------------CONTENT------------------------------- */
+.content{
+margin-top: 20%;
+  margin-left: 250px;
+  margin-right: 20px ;
+/* padding-left: 50px; */
+  
 }
+
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-card {
+  background-color: #5800FF;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 350px;
+  display: block;
+  color: aliceblue;
+
+
+}
+
+
+.goals-container{
+display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.goal-card {
+  background-color: #ff00b3dc;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 350px;
+  display: block;
+  color: aliceblue;
+
+}
+
+
+/* ---------------------CONTACT---------------------------------------- */
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+.contact-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: fit-content;
+font-size: 20px;
+text-align: center;
+font-family: "Poppins";
+font-weight: 200;
+
+}
+
+.contact-text{
+margin-top: 40%;
+font-family: 'Major Mono Display', monospace;
+  font-size: 90px;
+  font-weight: 800;
+
+}
+
+.email,
+.git,
+.linkedIn,
+.location {
+  padding: 40px;
+  height: 250px;
+
+}
+
+p{
+  font-family: "poppins";
+  font-size: 19px;
+  font-weight: 200;
+}
+
+
+/*  */
